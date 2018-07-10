@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Проект</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Твитер-клон</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,400i&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<h1>Проект</h1>
+	<div class="container">
+		<div class="row">
+			<!-- Left column -->
+			<div class="col-md-4">
+				<div class="card mb-3">
+					<div class="profile-backgraund"></div>
+					<div class="profile-avatar">
+						<img src="img/foto.jpg" alt="Ren">
+					</div>
+					<div class="card-body">
+						<h2 class="profile-title">Miyamura Ren</h2>
+						<div class="profil-description">
+							<p>Возможно о чём-нибудь и напишу.</p>
+						</div>
+						<ul class="stats">
+							<li class="stats-item">
+								<b class="stats-title">Твиты</b>
+								<b class="stats-count">54</b>
+							</li>
+							<li class="stats-item">
+								<b class="stats-title">Лайки</b>
+								<b class="stats-count">154</b>
+							</li>
+							<li class="stats-item">
+								<b class="stats-title">Репост</b>
+								<b class="stats-count">44</b>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- // Left column -->
+			<!-- Right column -->
+			<div class="col-md-8">
+				<div class="card mb-3">
+					<!-- Make a tweet -->
+					<div class="card-body">
+						<form>
+						  <div class="form-group">
+						    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Что нового?">
+						  </div>
+						  <button type="submit" class="btn btn-primary">Твитнуть</button>
+						</form>
+					</div>
+				</div>
+				<div class="card tweet-card tweet-card-rounded-top">
+					<div class="h4 mb-0">Мои твиты</div>
+				</div>
+				<!--Single Tweet-->
+				<div class="card tweet-card">
+					<div class="tweet-date">10 июля 2018</div>
+					<div class="tweet-text font-size-normal">
+						<p>Катана - длинный японский меч. В современном японском слово «катана» также обозначает любой меч. Длина клинка — от 2 до 2,5 сяку (60,6-75,7 см), общая длина с рукоятью условно ≈ 85-105 см (обычно 90-100 см). Если длина клинка меньше 2 сяку, то это короткий меч вакидзаси, а если больше 2,5 сяку, то окатана (большая катана) или тати, но помимо размера, тати традиционно имеет больший изгиб и другую отделку с креплением (Аси) к доспехам. <a href="https://ru.wikipedia.org/wiki/Катана">Источник</a></p>
+					</div>
+				</div>
+				<div class="card tweet-card">
+					<div class="tweet-date">09 июля 2018</div>
+					<div class="tweet-text font-size-large">
+						<p>Спата - прямой и длинный обоюдоострый меч, размером от 75 см до 1 м, использовавшийся на территории Римской империи c I по VI века нашей эры. <a href="https://ru.wikipedia.org/wiki/Спата">Источник</a></p>
+					</div>
+				</div>
+				<div class="card tweet-card">
+					<div class="tweet-date">08 июля 2018</div>
+					<div class="tweet-text font-size-smal">
+						<p>Шпага - холодное колюще-рубящее или колющее оружие, разновидность меча, состоящее из длинного (около 1 метра и более), прямого одно-двухлезвийного или гранёного клинка и рукояти (эфеса) с дужкой и гардой различной формы. В спортивном фехтовании существуют также рапира и эспадрон. Но если рапира возникла как облегчённая шпага, то эспадрон имеет независимое происхождение (он был призван имитировать при тренировке лёгкую фехтовальную саблю). <a href="https://ru.wikipedia.org/wiki/Шпага">Источник</a></p>
+					</div>
+				</div>
+				<!--Footer-->
+				<footer class="footer">
+					<p class="footer-copyright">
+						&copy; Maksimova 2018
+					</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script src="libs/jQuery/jQuery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
